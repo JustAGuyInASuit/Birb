@@ -4,7 +4,7 @@ import time
 go = machine.PWM(machine.Pin(16))
 go.freq(490)
 Led = machine.Pin("LED", machine.Pin.OUT)
-#4100 low 8500(?) high
+#4100 low 8500 high
 go.duty_u16(8500)
 time.sleep_ms(5000)
 go.duty_u16(800)
